@@ -1,0 +1,49 @@
+.history {
+    margin-top: 40px;
+}
+
+.item {
+    align-items: center;
+    background-color: var(--main-color);
+    border-width: 1px;
+    border-style: solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+.item_plus {
+    border-left-color: var(--positive-color);
+    border-right-color: var(--positive-color);
+}
+
+.item_minus {
+    border-left-color: var(--negative-color);
+    border-right-color: var(--negative-color);
+}
+
+.money {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.delete {
+    background-color: transparent;
+    color: red;
+    padding: 0;
+    border-width: 0;
+    font-size: 1.25em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.item:hover .delete {
+    opacity: 1;
+}
