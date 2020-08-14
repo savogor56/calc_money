@@ -35,7 +35,7 @@ class Operation extends React.Component {
                             />
                             <div className={styles.btns}>
                             <button 
-                                onClick={() => this.setState({ type: 'subtract'})} 
+                                onClick={() => this.setState({ type: 'cost'})} 
                                 className={`${styles.btn} ${styles.btn_subtract}`} 
                                 disabled={submitting || pristine}
                             >Расход</button>
