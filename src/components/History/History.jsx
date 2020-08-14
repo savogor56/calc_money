@@ -4,11 +4,7 @@ import styles from './History.module.css';
 const History = (props) => {
     const transactionsList = props.transactios.map(transaction => {
             return (
-                <li className={`${styles.item} ${transaction.type === 'add' ? styles.item_plus : styles.item_minus}`}>
-                    {transaction.description}
-                    <span className={styles.money}>{transaction.type === 'add' ? '+' : '-'}{transaction.amount} ₽</span>
-                    <button className={styles.delete}>x</button>
-                </li>
+                <HistoryItem key={transaction.id} transaction={transaction} />
             )
         })
     
@@ -19,6 +15,16 @@ const History = (props) => {
                 {transactionsList}
             </ul>
         </section>
+    )
+}
+
+const HistoryItem = ({ transaction }) => {
+    return(
+        <li className={`${styles.item} ${transaction.type === 'add' ? styles.item_plus : styles.item_minus}`}>
+            {transaction.description}
+            <span className={styles.money}>{transaction.type === 'add' ? '+' : '-'}{transaction.amount} ₽</span>
+            <button className={styles.delete}>x</button>
+        </li>
     )
 }
 

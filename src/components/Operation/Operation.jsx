@@ -18,9 +18,7 @@ class Operation extends React.Component {
                 render={({handleSubmit, form, submitting, pristine, submitSucceeded}) => (
                         <form onSubmit={(event) => {
                             handleSubmit(event);
-                            if(submitSucceeded) {
-                                form.reset();
-                            }
+                            form.reset();
                         }}>
                             <Field 
                                 name='operationName' 
