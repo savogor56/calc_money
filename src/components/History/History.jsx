@@ -14,7 +14,7 @@ const History = (props) => {
             <ul className={styles.list}>
                 {transactionsList}
             </ul>
-        </section>
+        </section> 
     )
 }
 
