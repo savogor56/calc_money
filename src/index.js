@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './template/normalize.css';
 import App from './App';
 
 

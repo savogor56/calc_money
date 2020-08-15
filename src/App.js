@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './normalize.css';
 import './App.css';
 import { Header } from './components/Header/Header';
 import Total from './components/Total/Total';
